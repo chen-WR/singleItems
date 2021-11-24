@@ -5,8 +5,7 @@ def swap(list1, p1, p2):
     return list1
 
 def weirdSort(list1):
-    flag = True
-    while flag:
+    while True:
         counter = 0
         # 0-8
         for i in range(0, len(list1)-1):
@@ -14,7 +13,7 @@ def weirdSort(list1):
                 swap(list1, i, i+1)
                 counter += 1
         if counter == 0:
-            flag = False
+            break
             
     return list1
 
