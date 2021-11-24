@@ -54,7 +54,7 @@ def checkImageOrVideo(file):
 def showImage(origin,duplicate):
 	pic1,pic2 = cv2.imread(origin),cv2.imread(duplicate)
 	try:
-		picture = np.concatenate((origin,duplicate),axis=1)
+		picture = np.concatenate((pic1,pic2),axis=1)
 		cv2.imshow("left is origin, right is duplicate",picture)
 	except ValueError:
 		cv2.imshow("origin",pic1)
