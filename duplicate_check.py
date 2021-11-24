@@ -1,3 +1,7 @@
+### Provide a origin folder for this script to recursivly going through all files and subfolders
+### For each file that is not dir, file goes to byte array and reading multiple byte from those array, and hash it
+### compare other files to the hashmap and if it already exists, move the file to duplicated folder that is created
+
 import os 
 from os import path
 import shutil 
